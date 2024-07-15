@@ -85,3 +85,56 @@ print("Float:", float_variable)
 
 
 print("**************practice6*************")
+#************tuple function to number and char it's colled nested tuple*************#
+
+myy_tuple={1,2,3,}
+a,b,c=myy_tuple
+print(b)
+myy_tuple={4,5,6,}
+d,e,f=myy_tuple
+print(d)
+
+
+
+print("**************practice7*************")
+
+#**********using set **********#
+
+
+setoddnumbers={x for x in range(1, 10, 2)}
+print(setoddnumbers)
+setevennumbers = {x for x in range(1, 12) if x % 2 == 0}
+print(setevennumbers)
+#union
+setoddnumbers={x for x in range(1, 10, 2)}
+setevennumbers = {x for x in range(1, 12) if x % 2 == 0}
+data=setoddnumbers.union(setevennumbers )
+print(data)
+#intersection
+setoddnumbers={x for x in range(1, 10, 2)}
+setevennumbers = {x for x in range(1, 12) if x % 2 == 0}
+data=setevennumbers.intersection(setoddnumbers)
+print(data)
+
+
+print("**************practice8*************")
+
+primenumbers={1,2,3,7,13}
+print(primenumbers)
+#   adding element
+primenumbers.add(11)
+print(primenumbers)
+#  removing element
+primenumbers.remove(2)
+print(primenumbers)
+# checking number to set
+sevennumber = 7 in primenumbers
+print("7 in set ", sevennumber)
+
+
+
+
+
+
+
+
